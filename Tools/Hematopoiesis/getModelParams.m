@@ -86,8 +86,10 @@ if opt.fitInitialConds==true %fit initial conditions (part of parameter vector)
             x0_str2 = strjoin(x0_cellstr2,', ');
         end
         opt.rates = {x0_cellstr{:}, opt.rates{:}};
-        x0_test=unidrnd(100,1,num_states);
-        x0_test(1)=250+unidrnd(250,1,1);
+%         x0_test=unidrnd(100,1,num_states);
+%         x0_test(1)=250+unidrnd(250,1,1);
+        x0_test=unidrnd(5,1,num_states);
+        x0_test(1)=500;
 %         x0_test=unidrnd(2000,1,n_states); % initial values for first piece of ODE
 %         x0_test(1) = 2000;
         if opt.realdata==false && opt.structuralIdentifiability==false
