@@ -43,8 +43,7 @@ Michèle C. Buck<sup>1,\*</sup>, Lisa Bast<sup>2,3,4,\*</sup>, Alexandra Murscha
   - os
   - re
 
-<h2>Data visualization</h2> 
-<h3>Bulk cell culture FACS analysis</h3> 
+<h2>Data visualization (Python)</h2> 
 To explore data set and perform statisical tests for group comparisons 
 
   1. go to folder <strong>/Python/data_analysis/</strong> and run <strong>Hematopoiesis_Graphics_Data.ipynb</strong>.
@@ -52,7 +51,7 @@ To explore data set and perform statisical tests for group comparisons
   2. Functions for data loading and plotting can be found in <strong>defined_functions.ipynb</strong>.
   
 
-<h2>Structural identifiability analysis for multi-compartmental model</h2>
+<h2>Structural identifiability analysis for multi-compartmental model (MATLAB)</h2>
 To perform structural identifiability analysis go to <strong>./Structural_Identifiability_Analysis/</strong>.
 
   1. open <strong>structural_identifiability_main.m</strong> and specify the directories and settings in <strong>getSISettings()</strong>.
@@ -62,7 +61,7 @@ To perform structural identifiability analysis go to <strong>./Structural_Identi
     
 <h2>Comparison of MDS patients, CHIP individuals and healthy individuals</h2> 
 
-<h3>Parameter inference on bulk cell culture FACS data</h3>
+<h3>Parameter inference on bulk cell culture FACS data (MATLAB)</h3>
     
   1. Specify settings in <strong>./MATLAB/parameter_inference/getDisorderAnalysisSettings.m</strong> to perform parameter inference on experimental (opt.RUN = 'fit_samples') or simulated (opt.RUN = 'in_silico') data.
 
@@ -71,7 +70,7 @@ To perform structural identifiability analysis go to <strong>./Structural_Identi
   3. Run <strong>build_scores_matrix_main.m</strong> for respective results folder/ settings.
 
  
-<h3>Results visualization</h3> 
+<h3>Results visualization (Python)</h3> 
 Go to <strong>./Python/results_visualization/</strong> and run 
 
   1. <strong>Hematopoiesis_Graphics_Results_fitSamplesRun_Model_intersect_ABDGI.ipynb</strong> to vizualize results for parameter inference on experimental data with Model_intersect_ABDGI.
