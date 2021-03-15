@@ -27,14 +27,26 @@ function [prolif_rate,diff_rates_i,diff_rates_o,death_rate] = getRateStrings(rat
     % proliferation rate
     ID_p = find(strwcmp(rates_str,['*b_',modelState,'*']));
     if ~isempty(ID_p)
-        prolif_rate = rates_str{ID_p};
+        if length(ID_p)==1
+            prolif_rate = rates_str{ID_p};
+        else
+            for i=1:length(ID_p)
+                prolif_rate{i} = rates_str{ID_p(i)};
+            end
+        end
     else
         prolif_rate = [];
     end
     %death rate
     ID_d = find(strwcmp(rates_str,['*g_',modelState,'*']));
     if ~isempty(ID_d)
-        death_rate = rates_str{ID_d};
+        if length(ID_d)==1
+            death_rate = rates_str{ID_d};
+        else
+            for i=1:length(ID_p)
+                death_rate{i} = rates_str{ID_d(i)};
+            end
+        end
     else
         death_rate = [];
     end
