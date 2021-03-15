@@ -47,13 +47,13 @@ Michèle C. Buck<sup>1,\*</sup>, Lisa Bast<sup>2,3,4,\*</sup>, Alexandra Murscha
 <h3>Bulk cell culture FACS analysis</h3> 
 To explore data set and perform statisical tests for group comparisons 
 
-  1. go to folder <strong>/DataVisualization/BulkAnalysis</strong> and run <strong>Hematopoiesis_Graphics_Data.ipynb</strong>.
+  1. go to folder <strong>/Python/data_analysis/</strong> and run <strong>Hematopoiesis_Graphics_Data.ipynb</strong>.
   
   2. Functions for data loading and plotting can be found in <strong>defined_functions.ipynb</strong>.
   
 
 <h2>Structural identifiability analysis for multi-compartmental model</h2>
-To perform structural identifiability analysis go to <strong>./Structural_Identifiability_Analysis</strong>.
+To perform structural identifiability analysis go to <strong>./Structural_Identifiability_Analysis/</strong>.
 
   1. open <strong>structural_identifiability_main.m</strong> and specify the directories and settings in <strong>getSISettings()</strong>.
     
@@ -72,10 +72,12 @@ To perform structural identifiability analysis go to <strong>./Structural_Identi
 
  
 <h3>Results visualization</h3> 
-Go to <strong>./Python/results_visualization</strong> and run 
+Go to <strong>./Python/results_visualization/</strong> and run 
 
   1. <strong>Hematopoiesis_Graphics_Results_fitSamplesRun_Model_intersect_ABDGI.ipynb</strong> to vizualize results for parameter inference on experimental data with Model_intersect_ABDGI.
  
   3. <strong>results_visualization_testRun.ipynb</strong> to visualize results for parameter inference on simulated data.
  
   5. <strong>results_visualization_validation.ipynb</strong> to visualize validation results.
+ 
+  6. Functions for data loading and plotting can be found in <strong>definedFunctions.ipynb</strong>.
