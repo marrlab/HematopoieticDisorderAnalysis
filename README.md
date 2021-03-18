@@ -27,21 +27,15 @@ Michèle C. Buck<sup>1,\*</sup>, Lisa Bast<sup>2,3,4,\*</sup>, Alexandra Murscha
  
   which are already included in folder 'tools' but need to get unzipped. Note that AMICI uses '.mex' files and requires MinGW as C/C++ compiler.   If you have not used mex with MATLAB before you might need to set it up first (by following these instructions: https://de.mathworks.com/help/matlab/matlab_external/install-mingw-support-package.html).
   
-- Python (3.4), usage of libraries:
-  - pandas
-  - numpy
-  - math
-  - seaborn
-  - matplotlib
-  - scipy
-  - fnmatch
-  - sklearn
-  - statsmodels
-  - h5py
-  - random
-  - collections
-  - os
-  - re
+- Python (3.6.12) by using JupyterLab (2.2.6) and libraries:
+  - pandas (1.1.5)
+  - numpy (1.19.2)
+  - seaborn (0.11.0)
+  - matplotlib (3.3.2)
+  - scipy (1.5.2)
+  - scikit-learn (0.23.2)
+  - statsmodels (0.12.1)
+  - h5py (2.10.0)
 
 <h2>Data visualization (Python)</h2> 
 To explore data set and perform statisical tests for group comparisons 
