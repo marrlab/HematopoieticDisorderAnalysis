@@ -27,67 +27,50 @@ Michèle C. Buck<sup>1,\*</sup>, Lisa Bast<sup>2,3,4,\*</sup>, Alexandra Murscha
  
   which are already included in folder 'tools' but need to get unzipped. Note that AMICI uses '.mex' files and requires MinGW as C/C++ compiler.   If you have not used mex with MATLAB before you might need to set it up first (by following these instructions: https://de.mathworks.com/help/matlab/matlab_external/install-mingw-support-package.html).
   
-- Python (3.4), usage of libraries:
-  - pandas
-  - numpy
-  - math
-  - seaborn
-  - matplotlib
-  - scipy
-  - fnmatch
-  - sklearn
-  - statsmodels
-  - h5py
-  - random
-  - collections
-  - os
-  - re
+- Python (3.6.12) by using JupyterLab (2.2.6) and libraries:
+  - pandas (1.1.5)
+  - numpy (1.19.2)
+  - seaborn (0.11.0)
+  - matplotlib (3.3.2)
+  - scipy (1.5.2)
+  - scikit-learn (0.23.2)
+  - statsmodels (0.12.1)
+  - h5py (2.10.0)
 
-<h2>Data visualization</h2> 
-<h3>Bulk cell culture FACS analysis</h3> 
+<h2>Data visualization (Python)</h2> 
 To explore data set and perform statisical tests for group comparisons 
 
-  1. go to folder <strong>/DataVisualization/BulkAnalysis</strong> and run <strong>Hematopoiesis_Graphics_Data.ipynb</strong>.
+  1. go to folder <strong>/Python/data_analysis/</strong> and run <strong>Hematopoiesis_Graphics_Data.ipynb</strong>.
   
   2. Functions for data loading and plotting can be found in <strong>defined_functions.ipynb</strong>.
   
-<h3>Single-cell time-lapse analysis</h3> 
 
-  1. go to folder <strong>/DataVisualization/SingleCellAnalysis/Plotting</strong> and run <strong>Plotting.py</strong> to plot trees.
-  
-  2. The data of the single-cell time-lapse experiments can be found in folder <strong>/TreeDataForPlotting</strong>.
-  
+<h2>Structural identifiability analysis for multi-compartmental model (MATLAB)</h2>
+To perform structural identifiability analysis go to <strong>./Structural_Identifiability_Analysis/</strong>.
 
-<h2>Structural identifiability analysis for multi-compartmental model</h2>
-To perform structural identifiability analysis go to <strong>./Structural_Identifiability_Analysis</strong>.
-
-  1. specify the directories in <strong>setPaths()</strong>.
+  1. open <strong>structural_identifiability_main.m</strong> and specify the directories and settings in <strong>getSISettings()</strong>.
     
-  2. run <strong>Create_Structural_Identifiability_Files.m</strong>.
+  2. run <strong>structural_identifiability_main.m</strong>.
   
     
-<h2>Comparison of MDS patients and healthy individuals</h2> 
+<h2>Comparison of MDS patients, CHIP individuals and healthy individuals</h2> 
 
-Download the required data and code from folder 
-
-  1. <strong>AnalysisAndModeling/BulkAnalysis/Healthy_MDS_Comparison</strong> for bulk cell culture FACS analysis
-  
-  2. <strong>AnalysisAndModeling/SingleCellAnalysis</strong> for single cell time lapse analysis
-  
-
-<h3>Parameter inference on bulk cell culture FACS data</h3>
-First specify the directories in <strong>setPaths()</strong>. To perform parameter inference on experimental data go to <strong>./Parameter_Inference</strong> and open <strong>RUN_H.m</strong>. Specify
+<h3>Parameter inference on bulk cell culture FACS data (MATLAB)</h3>
     
-  1. opt.RUN = 'fit_samples' to perform parameter inference on experimental data.
+  1. Specify settings in <strong>./MATLAB/parameter_inference/getDisorderAnalysisSettings.m</strong> to perform parameter inference on experimental (opt.RUN = 'fit_samples') or simulated (opt.RUN = 'in_silico') data.
 
-   1. for samples from healthy donors open <strong>getAppSettings.m</strong> and specify opt.group=‘healthy’.
-        
-   2. for samples from MDS patients open <strong>getAppSettings.m</strong> and specify opt.group=‘MDS’.
-        
-  2. opt.RUN = ‘test_inference_procedure' to perform parameter inference on simulated data.
+  2. Run <strong>./MATLAB/parameter_inference/disorder_analysis_main.m</strong>. This creates a results folder according to the specified settings.
     
-  3. run <strong>RUN_H.m</strong>.
-  
+  3. Run <strong>build_scores_matrix_main.m</strong> for respective results folder/ settings.
+
  
-<h3>Results visualization</h3> 
-Go to <strong>Hematopoiesis_Healthy_MDS_Comparison/Parameter_Inference</strong> and run <strong>Hematopoiesis_Graphics_Results_fitSamplesRun.ipynb</strong> to vizualize results for parameter inference on experimental data.
+<h3>Results visualization (Python)</h3> 
+Go to <strong>./Python/results_visualization/</strong> and run 
+
+  1. <strong>Hematopoiesis_Graphics_Results_fitSamplesRun_Model_intersect_ABDGI.ipynb</strong> to vizualize results for parameter inference on experimental data with Model_intersect_ABDGI.
+ 
+  3. <strong>results_visualization_testRun.ipynb</strong> to visualize results for parameter inference on simulated data.
+ 
+  5. <strong>results_visualization_validation.ipynb</strong> to visualize validation results.
+ 
+  6. Functions for data loading and plotting can be found in <strong>definedFunctions.ipynb</strong>.
