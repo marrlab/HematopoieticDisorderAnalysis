@@ -12,7 +12,7 @@ opt.structuralIdentifiability=false;
 %% model simulation settings:
 opt.modelStates = {'HSC','MPP','MLP','CMP','GMP','MEP','mat'};
 opt.models_implemented = {'model_A','model_B','model_C','model_D','model_E','model_F','model_G','model_H','model_I','model_J','model_intersect_ABDGI'};
-opt.model = 'model_intersect_ABDGI';%'model_A';
+opt.model = 'model_union_ABDGI';%'model_A';
 
 opt.fitDeadCells = false;%true;
 opt.fitInitialConds=true;%false;

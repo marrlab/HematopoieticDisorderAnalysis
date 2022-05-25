@@ -4,7 +4,7 @@ clc;
 
 [opt] = setPaths();
 fileName = '2020_08_data.xlsx';
-group_str =  'healthy';%'MDS';%
+group_str = 'MDS';%'healthy';%
 bool_fit_repetitions_seperately=false;%true;%
 
 if strcmp(group_str,'MDS')
@@ -39,8 +39,8 @@ opt_RUN = 'fit_samples';%'test_inference_procedure';%%'hierarchy_comparison_BIC'
 
 n_is=3;
 
-sim_model_str = {'model_intersect_ABDGI'};%{'model_A'};
-opt_model_str = {'model_intersect_ABDGI'};%{'model_A'};
+sim_model_str = {'model_union_ABDGI'};%{'model_A'};
+opt_model_str = {'model_union_ABDGI'};%{'model_A'};
 
 % sim_model_str = {'model_A','model_B','model_C','model_D','model_E','model_F','model_G','model_H','model_I','model_J'};
 % opt_model_str = {'model_A','model_B','model_C','model_D','model_E','model_F','model_G','model_H','model_I','model_J'};

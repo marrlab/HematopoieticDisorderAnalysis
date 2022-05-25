@@ -30,8 +30,8 @@ end
 function [opt,model_str] = getSISettings()
     opt = setPaths();
     
-    model_str={'model_intersect_ABDGI';};
-    opt.models_implemented = {'model_intersect_ABDGI';};
+    model_str={'model_union_ABDGI';};
+    opt.models_implemented = {'model_union_ABDGI';};
     opt.n_intermediateStates = 3;
     opt.iS_ID = find(opt.n_intermediateStates==3); %model with 3 intermediate states
     % for fitting number of divisions:
