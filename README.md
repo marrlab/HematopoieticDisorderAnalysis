@@ -56,7 +56,7 @@ To perform structural identifiability analysis go to <strong>/MATLAB/Structural_
 
   2. Run <strong>./MATLAB/parameter_inference/disorder_analysis_main.m</strong>. This creates a results folder according to the specified settings.
     
-  3. Run <strong>build_scores_matrix_main.m</strong> for respective results folder/ settings.
+  3. For model selection scores tables run <strong>build_scores_matrix_main.m</strong> for respective results folder/ settings.
 
  
 <h3>Results visualization (Python)</h3> 
