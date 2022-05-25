@@ -60,12 +60,5 @@ To perform structural identifiability analysis go to <strong>/MATLAB/Structural_
 
  
 <h3>Results visualization (Python)</h3> 
-Go to <strong>./Python/results_visualization/</strong> and run 
 
-  1. <strong>Hematopoiesis_Graphics_Results_fitSamplesRun_Model_intersect_ABDGI.ipynb</strong> to vizualize results for parameter inference on experimental data with Model_intersect_ABDGI.
- 
-  3. <strong>results_visualization_testRun.ipynb</strong> to visualize results for parameter inference on simulated data.
- 
-  5. <strong>results_visualization_validation.ipynb</strong> to visualize validation results.
- 
-  6. Functions for data loading and plotting can be found in <strong>definedFunctions.ipynb</strong>.
+To vizualize results for parameter inference on experimental data with Model_union_ABDGI go to <strong>./Python/results_visualization/</strong> and run <strong>Hematopoiesis_Graphics_Results_fitSamplesRun_Model_union_ABDGI.ipynb</strong> 
