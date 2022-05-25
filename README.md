@@ -2,19 +2,20 @@
 ## Data visualization, model implementation and parameter inference for mechanistic models of hematopoiesis
 contains code and data accompanying
 
-<strong>Kinetic Profiling reveals Age- and MDS-Related Changes in Hematopoietic Stem and Progenitor Cell Dynamics</strong> 
+<strong>Progressive Disruption of Hematopoietic Architecture from Clonal Hematopoiesis to MDS</strong> 
 
-Michèle C. Buck<sup>1,\*</sup>, Lisa Bast<sup>2,3,4,\*</sup>, Alexandra Murschauser<sup>5</sup>, Judith S. Hecker<sup>1</sup>, Lea Schuh<sup>2,3</sup>,  Maja Rothenberg-Thurley<sup>6</sup>, Immanuel Andrä<sup>7</sup>, Isabel Struzina<sup>1</sup>, Moritz Thomas<sup>2</sup>, Dantong Wang<sup>2,3</sup>, Fabian J. Theis<sup>2,3</sup>, Florian Bassermann<sup>1,8</sup>, Joachim Rädler<sup>5</sup>, Klaus H. Metzeler<sup>6,8</sup>, Robert A.J. Oostendorp<sup>1</sup>, Carsten Marr<sup>2,+</sup> and Katharina S. Götze<sup>1,8,+</sup>
+Michèle C. Buck<sup>1,\*</sup>, Lisa Bast<sup>2,3,4,\*</sup>, Judith S. Hecker<sup>1</sup>, Jennifer Rivière<sup>1</sup>, Maja Rothenberg-Thurley<sup>5</sup>, Luisa Vogel<sup>1</sup>, Dantong Wang<sup>2,3</sup>, Immanuel Andrä<sup>6</sup>, Fabian J. Theis<sup>2,3</sup>, Florian Bassermann<sup>1,7</sup>, Klaus H. Metzeler<sup>5,7,8</sup>, Robert A.J. Oostendorp<sup>1</sup>, Carsten Marr<sup>2,9,+</sup>, and Katharina S. Götze<sup>1,7,+</sup>
 
 <sub><sup>
-<sup>1</sup>Department of Medicine III, Technische Universität München, Klinikum rechts der Isar, Munich, Germany. <br>
-<sup>2</sup>Institute of Computational Biology, Helmholtz Zentrum München–German Research Center for Environmental Health, Neuherberg, Germany. <br>
-<sup>3</sup>Department of Mathematics, Chair of Mathematical Modeling of Biological Systems, Technische Universität München, Garching, Germany. <br>
-<sup>4</sup>Laboratory of Molecular Neurobiology, Department of Medical Biochemistry and Biophysics, Karolinska Institutet, Stockholm, Sweden.<br>
-<sup>5</sup>Department of soft condensed matter physics, Faculty of Physics, Ludwig-Maximilians-Universität, Munich, Germany. <br>
-<sup>6</sup>Laboratory for Leukemia Diagnostics, Department of Medicine III, Ludwig-Maximilians-Universität, Munich, Germany. <br>
-<sup>7</sup>Institute of Microbiology, Technische Universität München, Munich, Germany. <br>
-<sup>8</sup>German Cancer Consortium (DKTK), Heidelberg, Partner Site Munich. <br>
+<sup>1</sup>Department of Medicine III, Technische Universität München, Klinikum rechts der Isar, Munich, Germany.
+<sup>2</sup>Institute of Computational Biology, Helmholtz Zentrum München–German Research Center for Environmental Health, Neuherberg, Germany.
+<sup>3</sup>Department of Mathematics, Chair of Mathematical Modeling of Biological Systems, Technische Universität München, Garching, Germany.
+<sup>4</sup>Current address: Laboratory of Molecular Neurobiology, Department of Medical Biochemistry and Biophysics, Karolinska Institutet, Stockholm, Sweden.
+<sup>5</sup>Laboratory for Leukemia Diagnostics, Department of Medicine III, University Hospital, Ludwig-Maximilians-Universität, Munich, Germany
+<sup>6</sup>Institute of Microbiology, Technische Universität München, Munich, Germany.
+<sup>7</sup>German Cancer Consortium (DKTK), Heidelberg, Partner Site Munich
+<sup>8</sup>Department of Hematology and Cell Therapy, University Hospital Leipzig (UHL), Germany.
+<sup>9</sup>Institute of AI for Health, Helmholtz Zentrum München–German Research Center for Environmental Health, Neuherberg, Germany.
 <sup>*</sup> Equal contribution <br>
 <sup>+</sup> Joint corresponding authors <br>
 </sup></sub>
